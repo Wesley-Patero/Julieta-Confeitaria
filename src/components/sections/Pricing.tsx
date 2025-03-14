@@ -52,7 +52,9 @@ const Pricing: React.FC = () => {
   return (
     <section id="pricing" className="section-padding bg-white">
       <div className="text-center mb-12">
-        <h2 className="section-title">Nossos Produtos</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-script font-bold text-bakery-green mb-8 tracking-wide inline-block">
+          Nossos Produtos
+        </h2>
         <p className="text-lg text-bakery-green/80 max-w-2xl mx-auto">
           Criações artesanais feitas com ingredientes selecionados e muito carinho
         </p>

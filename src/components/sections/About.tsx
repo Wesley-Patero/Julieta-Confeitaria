@@ -6,7 +6,9 @@ const About: React.FC = () => {
     <section id="about" className="section-padding bg-white">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div className="space-y-6">
-          <h2 className="section-title">Quem é a Julieta Confeitaria?</h2>
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-script font-bold text-bakery-green mb-8 tracking-wide inline-block">
+            Quem é a Julieta Confeitaria?
+          </h2>
           <p className="text-lg text-bakery-green/80 leading-relaxed animate-fade-in">
             A Julieta Confeitaria nasceu de uma paixão por doces artesanais e sabores inesquecíveis. 
             Cada criação é feita com cuidado, carinho e um toque de elegância para adoçar seus momentos especiais.
