@@ -10,7 +10,9 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="section-padding bg-bakery-green text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="section-title !text-bakery-cream">Entre em Contato</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-script font-bold text-bakery-cream mb-8 tracking-wide inline-block">
+          Entre em Contato
+        </h2>
         <p className="text-xl text-bakery-cream/90 mb-12 animate-fade-in">
           Encomende seu bolo agora ou solicite um orçamento!
         </p>
