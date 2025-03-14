@@ -1,101 +1,184 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 40 33% 98%;
+    --foreground: 150 50% 13%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 40 33% 98%;
+    --card-foreground: 150 50% 13%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 40 33% 98%;
+    --popover-foreground: 150 50% 13%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 150 60% 13%;
+    --primary-foreground: 45 57% 52%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 57% 52%;
+    --secondary-foreground: 150 60% 13%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 33% 96%;
+    --muted-foreground: 150 30% 30%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 45 57% 52%;
+    --accent-foreground: 150 60% 13%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 150 20% 80%;
+    --input: 150 20% 80%;
+    --ring: 150 50% 13%;
 
-    --radius: 0.5rem;
-
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-
-  .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
-
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
-
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
-
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
-
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
-
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
-
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
-
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
-  }
-}
-
-@layer base {
-  * {
-    @apply border-border;
+    --radius: 0.75rem;
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply antialiased bg-bakery-cream text-bakery-green font-sans overflow-x-hidden;
+    scroll-behavior: smooth;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto;
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/30 border border-white/10 shadow-sm;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-script font-bold text-bakery-green relative mb-8 tracking-wide inline-block;
+  }
+
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-1/4 right-1/4 h-1 bg-bakery-gold rounded-full;
+  }
+
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-gradient {
+    background: linear-gradient(0deg, rgba(10, 58, 42, 0.9) 0%, rgba(10, 58, 42, 0.5) 100%);
+  }
+
+  .nav-item {
+    @apply relative px-3 py-2 text-bakery-cream hover:text-bakery-gold transition-colors duration-300 text-lg;
+  }
+
+  .nav-item::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-bakery-gold transition-all duration-300 ease-in-out;
+  }
+
+  .nav-item:hover::after {
+    @apply w-full;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .gallery-item {
+    @apply overflow-hidden rounded-lg shadow-md transition-all duration-300 cursor-pointer;
+  }
+
+  .gallery-item img {
+    @apply transition-all duration-500 ease-in-out hover:scale-110 w-full h-full object-cover;
+  }
+
+  .social-icon {
+    @apply w-10 h-10 flex items-center justify-center rounded-full bg-bakery-gold text-bakery-green 
+           hover:bg-bakery-green hover:text-bakery-gold transition-colors duration-300;
+  }
+
+  .pricing-card {
+    @apply bg-white rounded-xl p-6 shadow-md border border-bakery-gold/20 transition-all duration-300
+           hover:shadow-xl hover:border-bakery-gold/50;
+  }
+
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animate-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Lightbox styles */
+.lightbox-overlay {
+  @apply fixed inset-0 bg-black/80 z-50 flex items-center justify-center opacity-0 transition-opacity duration-300;
+}
+
+.lightbox-overlay.open {
+  @apply opacity-100;
+}
+
+.lightbox-container {
+  @apply max-w-5xl max-h-[90vh] relative rounded-lg overflow-hidden transform scale-95 opacity-0 transition-all duration-300;
+}
+
+.lightbox-container.open {
+  @apply scale-100 opacity-100;
+}
+
+.lightbox-close {
+  @apply absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-bakery-gold/80 
+         text-bakery-green hover:bg-bakery-gold transition-colors duration-300 cursor-pointer z-10;
+}
+
+.lightbox-nav {
+  @apply absolute top-1/2 -translate-y-1/2 w-12 h-12 flex items-center justify-center rounded-full 
+         bg-bakery-gold/80 text-bakery-green hover:bg-bakery-gold transition-colors duration-300 cursor-pointer z-10;
+}
+
+.lightbox-prev {
+  @apply left-4;
+}
+
+.lightbox-next {
+  @apply right-4;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0A3A2A;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
 }
