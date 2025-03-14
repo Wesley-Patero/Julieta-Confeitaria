@@ -35,9 +35,9 @@ const Gallery: React.FC = () => {
   return (
     <section id="gallery" className="section-padding bg-bakery-cream">
       <div className="text-center mb-12">
-        <h2 className="section-title">Our Gallery</h2>
+        <h2 className="section-title">Nossa Galeria</h2>
         <p className="text-lg text-bakery-green/80 max-w-2xl mx-auto">
-          Discover our delicious creations and get inspired for your next celebration
+          Descubra nossas deliciosas criações e inspire-se para sua próxima celebração
         </p>
       </div>
 
@@ -51,9 +51,8 @@ const Gallery: React.FC = () => {
           >
             <img
               src={`${image}?auto=format&fit=crop&w=600&q=80`}
-              alt={`Gallery item ${index + 1}`}
-              className="aspect
--square"
+              alt={`Item da galeria ${index + 1}`}
+              className="aspect-square"
             />
           </div>
         ))}

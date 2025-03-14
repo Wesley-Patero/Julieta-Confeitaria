@@ -43,19 +43,19 @@ const Header: React.FC = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-2">
           <button onClick={() => scrollToSection('home')} className="nav-item">
-            Home
+            Início
           </button>
           <button onClick={() => scrollToSection('about')} className="nav-item">
-            About
+            Sobre
           </button>
           <button onClick={() => scrollToSection('gallery')} className="nav-item">
-            Gallery
+            Galeria
           </button>
           <button onClick={() => scrollToSection('pricing')} className="nav-item">
-            Pricing
+            Preços
           </button>
           <button onClick={() => scrollToSection('contact')} className="nav-item">
-            Contact
+            Contato
           </button>
         </nav>
 
@@ -79,31 +79,31 @@ const Header: React.FC = () => {
             onClick={() => scrollToSection('home')}
             className="text-xl text-bakery-cream hover:text-bakery-gold transition-colors"
           >
-            Home
+            Início
           </button>
           <button
             onClick={() => scrollToSection('about')}
             className="text-xl text-bakery-cream hover:text-bakery-gold transition-colors"
           >
-            About
+            Sobre
           </button>
           <button
             onClick={() => scrollToSection('gallery')}
             className="text-xl text-bakery-cream hover:text-bakery-gold transition-colors"
           >
-            Gallery
+            Galeria
           </button>
           <button
             onClick={() => scrollToSection('pricing')}
             className="text-xl text-bakery-cream hover:text-bakery-gold transition-colors"
           >
-            Pricing
+            Preços
           </button>
           <button
             onClick={() => scrollToSection('contact')}
             className="text-xl text-bakery-cream hover:text-bakery-gold transition-colors"
           >
-            Contact
+            Contato
           </button>
         </nav>
       </div>

@@ -3,28 +3,28 @@ import React from 'react';
 
 const pricingItems = [
   {
-    title: 'Custom Cakes',
-    description: 'Personalized cakes for any occasion',
-    price: 'Starting from $50',
-    details: ['Custom design', 'Various flavors', 'Different sizes available'],
+    title: 'Bolos Personalizados',
+    description: 'Bolos personalizados para qualquer ocasião',
+    price: 'A partir de R$250',
+    details: ['Design personalizado', 'Diversos sabores', 'Diferentes tamanhos disponíveis'],
   },
   {
     title: 'Cupcakes',
-    description: 'Perfect for parties and events',
-    price: '$24/dozen',
-    details: ['Classic flavors', 'Custom decorations', 'Bulk orders welcome'],
+    description: 'Perfeitos para festas e eventos',
+    price: 'R$120/dúzia',
+    details: ['Sabores clássicos', 'Decorações personalizadas', 'Encomendas em quantidade bem-vindas'],
   },
   {
     title: 'Brownies',
-    description: 'Rich and fudgy treats',
-    price: '$18/dozen',
-    details: ['Traditional recipe', 'Various toppings', 'Gift packaging available'],
+    description: 'Guloseimas ricas e cremosas',
+    price: 'R$90/dúzia',
+    details: ['Receita tradicional', 'Diversas coberturas', 'Embalagem para presente disponível'],
   },
   {
-    title: 'Party Kits',
-    description: 'Complete dessert packages',
-    price: 'Starting from $100',
-    details: ['Custom selection', 'Various quantities', 'Setup available'],
+    title: 'Kits para Festas',
+    description: 'Pacotes completos de sobremesas',
+    price: 'A partir de R$500',
+    details: ['Seleção personalizada', 'Várias quantidades', 'Montagem disponível'],
   },
 ];
 
@@ -32,9 +32,9 @@ const Pricing: React.FC = () => {
   return (
     <section id="pricing" className="section-padding bg-white">
       <div className="text-center mb-12">
-        <h2 className="section-title">Our Prices</h2>
+        <h2 className="section-title">Nossos Preços</h2>
         <p className="text-lg text-bakery-green/80 max-w-2xl mx-auto">
-          Quality ingredients and craftsmanship for every budget
+          Ingredientes de qualidade e artesanato para todos os orçamentos
         </p>
       </div>
 

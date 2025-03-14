@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
           Julieta Confeitaria
         </h1>
         <p className="text-xl md:text-2xl text-bakery-cream/90 max-w-2xl animate-slide-up">
-          Delicious moments made with love
+          Momentos deliciosos feitos com amor
         </p>
       </div>
 
@@ -75,7 +75,7 @@ const Hero: React.FC = () => {
         onClick={prevSlide}
         className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-bakery-gold/80 text-bakery-green
                    hover:bg-bakery-gold transition-colors duration-300 focus:outline-none"
-        aria-label="Previous slide"
+        aria-label="Slide anterior"
       >
         <ChevronLeft size={24} />
       </button>
@@ -83,7 +83,7 @@ const Hero: React.FC = () => {
         onClick={nextSlide}
         className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-bakery-gold/80 text-bakery-green
                    hover:bg-bakery-gold transition-colors duration-300 focus:outline-none"
-        aria-label="Next slide"
+        aria-label="Próximo slide"
       >
         <ChevronRight size={24} />
       </button>
@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
                 ? 'bg-bakery-gold w-8'
                 : 'bg-bakery-cream/50 hover:bg-bakery-cream'
             }`}
-            aria-label={`Go to slide ${index + 1}`}
+            aria-label={`Ir para slide ${index + 1}`}
           />
         ))}
       </div>

@@ -10,9 +10,9 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="section-padding bg-bakery-green text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="section-title !text-bakery-cream">Get in Touch</h2>
+        <h2 className="section-title !text-bakery-cream">Entre em Contato</h2>
         <p className="text-xl text-bakery-cream/90 mb-12 animate-fade-in">
-          Order your cake now or request a quote!
+          Encomende seu bolo agora ou solicite um orçamento!
         </p>
         
         <button
@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
                    transition-all duration-300 transform hover:scale-105 animate-slide-up"
         >
           <MessageCircle className="w-6 h-6" />
-          <span className="text-lg font-medium">Chat on WhatsApp</span>
+          <span className="text-lg font-medium">Conversar no WhatsApp</span>
         </button>
       </div>
     </section>
